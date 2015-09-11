@@ -6,6 +6,29 @@ module MethodsQuiz2
 				die1 + 1
 	end
 
+	def max_maybe?(num1,num2)
+		if num1 == num2
+			0
+		elsif num1 % 5 == num2 % 5
+			which_number_is_bigger?(true,num1,num2)
+		else
+			which_number_is_bigger?(false,num1,num2)
+		end
+	end
+
+	def which_number_is_bigger?(lessthan,n,i)
+		if n > i
+			return n unless lessthan == true
+				i
+		else
+			return i unless lessthan == true
+				n
+		end
+
+	end
+
+
+
 	
 	
 

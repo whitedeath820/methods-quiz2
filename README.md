@@ -41,10 +41,12 @@ Follow this process for your quiz:
 
     Return the sum of two 6-sided dice rolls, each in the range 1..6. However, if the parameter no_doubles is true, if the two dice show the same value, increment one die to the next value before computing the sum, wrapping the die's value around to 1 if its value was 6.
 
-    
+
 2. max_maybe
 
     Given two integer values, return whichever value is larger. However if the two values have the same remainder when divided by 5, then the return the smaller value. However, in all cases, if the two values are the same, return 0.
+
+
 3. squirrels_play?
 
     The squirrels in Highlands Ranch spend most of the day playing. In particular, they play if the temperature is between 60 and 90 (inclusive). Unless it is summer, then the upper limit is 100 instead of 90. Given a temperature and whether or not it is summer, decide if the squirrels should play.
