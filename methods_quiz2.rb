@@ -32,5 +32,9 @@ module MethodsQuiz2
 			temp >=60 && temp <= 100
 	end
 
-	
+	def red_ticket(a,b,c)
+		if a == b && b == c
+			return 5 unless 
+
+
 end
