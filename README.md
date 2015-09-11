@@ -40,6 +40,8 @@ Follow this process for your quiz:
 1. without_doubles
 
     Return the sum of two 6-sided dice rolls, each in the range 1..6. However, if the parameter no_doubles is true, if the two dice show the same value, increment one die to the next value before computing the sum, wrapping the die's value around to 1 if its value was 6.
+
+    
 2. max_maybe
 
     Given two integer values, return whichever value is larger. However if the two values have the same remainder when divided by 5, then the return the smaller value. However, in all cases, if the two values are the same, return 0.
