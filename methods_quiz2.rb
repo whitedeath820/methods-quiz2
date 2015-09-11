@@ -27,9 +27,10 @@ module MethodsQuiz2
 
 	end
 
-
+	def squirrels_play?(temp,summer)
+		return temp >= 60 && temp <= 90 unless summer == true
+			temp >=60 && temp <= 100
+	end
 
 	
-	
-
 end
