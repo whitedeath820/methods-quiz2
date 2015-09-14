@@ -82,4 +82,27 @@ module MethodsQuiz2Tests
 		end
 	end
 
+	class Redticket < QuizTest
+		def test_max_points
+			assert_equal 10, @m.red_ticket(2,2,2)
+		end
+		def test_five_points
+			assert_equal 5, @m.red_ticket(1,1,1)
+			assert_equal 5, @m.red_ticket(0,0,0)
+		end
+		def test_one_point
+			assert_equal 1, @m.red_ticket(2,1,1)
+			assert_equal 1, @m.red_ticket(1,0,0)
+			assert_equal 1, @m.red_ticket(2,0,0)
+			assert_equal 1, @m.red_ticket(1,2,2)
+			assert_equal 1, @m.red_ticket(0,1,1)
+			assert_equal 1, @m.red_ticket(0,2,2)
+			assert_equal 1, @m.red_ticket(2,1,0)
+
+		end
+		def test_zero_points
+			assert_equal 0, @m.red_ticket(2,2,0)
+		end
+	end
+
 end
